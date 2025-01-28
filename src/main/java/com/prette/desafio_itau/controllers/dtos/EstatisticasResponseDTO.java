@@ -5,4 +5,8 @@ public record EstatisticasResponseDTO(Long count,
                                       Double avg,
                                       Double min,
                                       Double max) {
+
+    public EstatisticasResponseDTO() {
+        this(0L, 0.0, 0.0, 0.0, 0.0);
+    }
 }
